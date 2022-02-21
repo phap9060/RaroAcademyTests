@@ -14,6 +14,18 @@ function Difference() {
             }
         }
     }
+    for (let i = 0; i <= (a.length - 1); i++) {
+        let count = 0
+        for (let p = 0; p <= (b.length - 1); p++) {
+            if (b[i]!==a[p]){
+                count++
+            }
+            if (count === b.length){
+                c[c.length] = b[i]
+                
+            }
+        }
+    }
 
 
     return (console.log(c));
