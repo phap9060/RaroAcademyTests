@@ -12,4 +12,4 @@ function sort(array:number[] ){
     return array   
 }
 
-console.log(sort([5,4,6,9,1,2,3,7,8,0]))
+console.log(sort([2,5,9,10,3,8,7,6,1]))
