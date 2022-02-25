@@ -1,4 +1,4 @@
-const alunos = [
+let alunos = [
     { nome: 'João', nota: 7.3, bolsista: false },
     { nome: 'Maria', nota: 9.2, bolsista: true },
     { nome: 'Pedro', nota: 9.8, bolsista: false },
@@ -9,9 +9,9 @@ type props = {
     nota?:number,
     bolsista?:boolean
 }
-const filters = ['nota','nome'];
+const picks = ['nota','nome'];
 
-function pick(students:Array<props>, filters:string[]){
+function pick(students:Array<props>, filters:string[]):Array<props>{
     const result = students.map((student)=>{
         let obj:props = {}
 
@@ -21,3 +21,4 @@ function pick(students:Array<props>, filters:string[]){
         return obj
     })
  return result
+}
