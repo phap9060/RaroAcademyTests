@@ -1,4 +1,4 @@
-const desafio1asRosasNaoFalam = async () => {
+const desafio1asRosasNaoFalam =  () => {
 
     const geraIntervaloAleatório = () => Math.floor(Math.random() * 3 * 1000);
     
@@ -7,45 +7,54 @@ const desafio1asRosasNaoFalam = async () => {
     return new Promise(res =>{
         setTimeout(() => {
             console.log('Queixo-me às rosas');
-            masQueBobagem()
-          }, geraIntervaloAleatório());
+            res()
+        }, geraIntervaloAleatório());
+    })};
+  
+    const masQueBobagem = () => {
+        return new Promise(res => {
+            setTimeout(() => {
+                console.log('Mas que bobagem');
+                res()
+            }, geraIntervaloAleatório())
 
-    })
+        })};
+  
+    const asRosasNaoFalam = () => {
+     return new Promise(res =>{
+        setTimeout(() => {
+            console.log('As rosas não falam');
+            res()
+          }, geraIntervaloAleatório());
+     })
      
     };
   
-    const masQueBobagem = () => {
-      setTimeout(() => {
-        console.log('Mas que bobagem');
-        asRosasNaoFalam()
-      }, geraIntervaloAleatório());
-    };
-  
-    const asRosasNaoFalam = () => {
-      setTimeout(() => {
-        console.log('As rosas não falam');
-        simplesmenteAsRosasExalam()
-      }, geraIntervaloAleatório());
-    };
-  
     const simplesmenteAsRosasExalam = () => {
-      setTimeout(() => {
-        console.log('Simplesmente as rosas exalam');
-        oPerfumeQueRoubamDeTi()
-      }, geraIntervaloAleatório());
+     return new Promise(res => {
+        setTimeout(() => {
+            console.log('Simplesmente as rosas exalam');
+            res()
+          }, geraIntervaloAleatório());
+     })   
+     
     };
   
     const oPerfumeQueRoubamDeTi = () => {
-      setTimeout(() => {
-        console.log('O perfume que roubam de ti, ai');
-      }, geraIntervaloAleatório());
+       return new Promise(res =>{
+        setTimeout(() => {
+            console.log('O perfume que roubam de ti, ai');
+            res()
+        }, geraIntervaloAleatório());
+       }) 
+      
     };
 
-    queixoMeAsRosas.then(res => {
-      res =  masQueBobagem().then(res =>{
-          res = asRosasNaoFalam
-      } )
-    })
+   queixoMeAsRosas()
+   .then(()=> masQueBobagem())
+   .then(()=> asRosasNaoFalam())
+   .then(()=> simplesmenteAsRosasExalam())
+   .then(()=> oPerfumeQueRoubamDeTi())
   
 }
 
