@@ -1,4 +1,4 @@
-function Baskara (a:number,b:number,c:number){
+function baskara (a:number,b:number,c:number){
     const delta = b*b - (4*a*c)
     if (delta < 0){
         return (console.log("A fórmula de Baskara não pode ser aplicada, pois o delta é 0"))
@@ -9,4 +9,4 @@ function Baskara (a:number,b:number,c:number){
     }
 
 }
-Baskara(1,5,3)
+baskara(1,5,3)
