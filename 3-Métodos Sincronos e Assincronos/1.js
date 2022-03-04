@@ -38,16 +38,8 @@ const desafio1asRosasNaoFalam = () => {
     };
   
   
-    queixoMeAsRosas(() =>
-            masQueBobagem(() =>
-                asRosasNaoFalam(()=>
-                    simplesmenteAsRosasExalam(()=>
-                        oPerfumeQueRoubamDeTi()
-                )
-
-            )  
-        )
-    )
+    queixoMeAsRosas()
+          
    
 }
 
