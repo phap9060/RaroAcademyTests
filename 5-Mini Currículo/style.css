@@ -1,0 +1,89 @@
+*{
+    font-family: 'Roboto';
+    margin: 4px;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    padding-top: 20px;
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo-sobre{
+    padding-left: 2rem;
+    font-size: 1rem;
+}
+
+.image{
+    border-radius: 80%;
+    width: 10rem;
+}
+
+.subtitulo{
+    font-weight: 400;
+}
+.span{
+    margin-top: 1rem;
+    width: 80%;
+    background-color:#e5e5e5;
+}
+.section-sobre{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.article{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.titulo-article{
+    font-size: 1.5rem;
+
+}
+.section-experiencia{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.titulo-article-experiencia{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+}
+.empresa{
+    font-weight: 400;
+    font-size: medium;
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+@media (max-width:900px) {
+    .header{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .image{
+        width: 6rem;
+    }
+   .titulo{
+    font-size: 0.6rem;
+
+   } 
+}
