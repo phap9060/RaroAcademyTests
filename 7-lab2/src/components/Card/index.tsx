@@ -16,7 +16,7 @@ export default function Card({foto,nome,profissao}: props){
                 </div>
                 <div>
                     <button>call</button>
-                    <button>Send email</button>
+                    <button>Send Email</button>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Card from "./components/Card";
-import Footer from "./components/Footer";
+import './app.css'
 
 function App() {
   return  (
@@ -26,7 +26,7 @@ function App() {
       nome = 'Cris'
       profissao = 'Lider de Guangue'
       />
-      <Footer />
+      <p className="span" >We found 23 contacts</p>
    </>
        
   )
