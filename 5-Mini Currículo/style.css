@@ -15,6 +15,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 .titulo-sobre{
     padding-left: 2rem;
@@ -39,15 +40,17 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    
 }
 .article{
     width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    
 }
 .titulo-article{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 
 }
 .section-experiencia{

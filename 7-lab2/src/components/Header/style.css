@@ -1,0 +1,30 @@
+.header{
+    margin-bottom: 1rem;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.contacts{
+    font-size: 40px;
+    font-weight: 550;
+    color: #F2FA5A;
+}
+input{
+    text-align: center;
+    font-size: 1.5rem;
+    border: none;
+    color: rgb(118,118,118);
+    background-color: #F2FA5A;
+    border-radius: 48px;
+    height: 2.5rem;
+    width: 14rem;
+}
+@media(max-width:1000px){
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+}

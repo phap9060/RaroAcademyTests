@@ -1,0 +1,71 @@
+.contact{
+    background-color:#56BBF1;
+    display: flex;
+    padding: 8px 24px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.contact > div{
+    align-items: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 24px;
+}
+.contact > div > div:first-child h2{
+    margin: 0;
+    font-weight: 400;
+    color: #F1E1A6;
+    font-size: 2rem;
+
+}
+.contact > div > div:first-child h4{
+    margin: 0;
+    font-weight: 400;
+    color: #F4BBBB;
+    font-size: 1.8rem
+
+}
+
+button{
+    margin-right: 0.5rem;
+    font-weight: 600;
+    color: white;
+    min-width: 3rem;
+    height: 2rem;
+    border-radius: 8px;
+    background-color:#56BBF1;
+    border-style: solid;
+    border-color:#F1E1A6;
+    border-width: 1px;
+}
+
+img{
+    border-radius: 85px;
+    width: 100px;
+    height: 100px;
+}
+@media(max-width:1000px){
+    img{
+        width: 60px;
+        height: 70px;
+        border-radius: 85px;
+    }
+   
+    .contact > div > div:first-child h2{
+        margin: 0;
+        font-weight: 600;
+        color: #F1E1A6;
+        font-size: 1.3rem;
+    
+    }
+    .contact > div > div:first-child h4{
+        margin: 0;
+        font-weight: 500;
+        color: #F4BBBB;
+        font-size: 1rem
+    
+    }
+}
