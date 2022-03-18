@@ -1,4 +1,4 @@
 ### Grupo formado por :
 * Pedro Henrique Assunção
-* Mauricio
+* Mauricio Silva
 * Eliel Bianchi
