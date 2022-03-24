@@ -1,0 +1,130 @@
+.player{
+  color: white;
+  font: 400;
+}
+.um{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  width: 15vw;
+  height: 20vh;
+  border-bottom:solid white;
+  border-right: solid white;
+  cursor: pointer;
+  
+}
+.dois{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  width: 15vw;
+  height: 20vh;
+  border-bottom:solid white;
+  border-right: solid white;
+  cursor: pointer;
+}
+.tres{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  width: 15vw;
+  height: 20vh;
+  border-bottom: solid white;
+  cursor: pointer;
+}
+
+
+.quatro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  width: 15vw;
+  height: 20vh;
+  border-right: solid white;
+  border-bottom: solid white;
+  cursor: pointer;
+}
+.cinco{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  width: 15vw;
+  height: 20vh;
+  border-right: solid white;
+  border-bottom: solid white;
+  cursor: pointer;
+}
+.seis{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  width: 15vw;
+  height: 20vh;
+  border-bottom: solid white;
+  cursor: pointer;
+}
+
+.sete{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  width: 15vw;
+  height: 20vh;
+  border-right: solid white;
+  cursor: pointer;
+}
+.oito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  width: 15vw;
+  height: 20vh;
+  border-right: solid white;
+  cursor: pointer;
+}
+.nove{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8rem;
+  width: 15vw;
+  height: 20vh;
+  cursor: pointer;
+}
+@media(max-width:1000px){
+  .um{
+    width: 30vw;
+  }
+  .dois{
+    width: 30vw;
+  }
+  .tres{
+    width: 30vw;
+  }
+  .quatro{
+    width: 30vw;
+  }
+  .cinco{
+    width: 30vw;
+  }
+  .seis{
+    width: 30vw;
+  }
+  .sete{
+    width: 30vw;
+  }
+  .oito{
+    width: 30vw;
+  }
+  .nove{
+    width: 30vw;
+  }
+}

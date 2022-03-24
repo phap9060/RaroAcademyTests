@@ -1,0 +1,15 @@
+.quadrado{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color:#00A1D7 ;
+  width: 50vw;
+  height: 75vh;
+}
+@media(max-width:1000px){
+  .quadrado{
+    width: 100vw;
+  }
+}
