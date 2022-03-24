@@ -157,7 +157,7 @@ function App() {
             className={"um"}
           />
           <Square
-          setRestart={setRestart}
+            setRestart={setRestart}
             restart={restart}
             winner={winner}
             localization={"dois"}
@@ -170,7 +170,7 @@ function App() {
             className={"dois"}
           />
           <Square
-          setRestart={setRestart}
+            setRestart={setRestart}
             restart={restart}
             winner={winner}
             localization={"tres"}
@@ -185,7 +185,7 @@ function App() {
         </div>
         <div className="linha">
           <Square
-          setRestart={setRestart}
+            setRestart={setRestart}
             restart={restart}
             winner={winner}
             localization={"quatro"}
@@ -199,7 +199,7 @@ function App() {
           />
 
           <Square
-          setRestart={setRestart}
+            setRestart={setRestart}
             restart={restart}
             winner={winner}
             localization={"cinco"}
@@ -212,7 +212,7 @@ function App() {
             className={"cinco"}
           />
           <Square
-          setRestart={setRestart}
+            setRestart={setRestart}
             restart={restart}
             winner={winner}
             localization={"seis"}
@@ -227,7 +227,7 @@ function App() {
         </div>
         <div className="linha">
           <Square
-          setRestart={setRestart}
+            setRestart={setRestart}
             restart={restart}
             winner={winner}
             localization={"sete"}
@@ -240,7 +240,7 @@ function App() {
             className={"sete"}
           />
           <Square
-          setRestart={setRestart}
+            setRestart={setRestart}
             restart={restart}
             winner={winner}
             localization={"oito"}
@@ -253,7 +253,7 @@ function App() {
             className={"oito"}
           />
           <Square
-          setRestart={setRestart}
+            setRestart={setRestart}
             restart={restart}
             winner={winner}
             localization={"nove"}
