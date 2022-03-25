@@ -31,12 +31,12 @@ const Square: FC<Iprops> = ({
   const [userPick, setUserPick] = useState<number>(1);
 
   const player = () => {
-    if (whoPlaying === "Player 1" && winner === false) {
+    if (whoPlaying === "Player 1" && userPick === 1 && winner === false) {
       setPlayer1(() => [...player1, localization]);
       setWhoPlaying(() => "Player 2");
       setUserPick(2);
     }
-    if (whoPlaying === "Player 2" && winner === false) {
+    if (whoPlaying === "Player 2" &&  userPick === 1 && winner === false) {
       setPlayer2(() => [...player2, localization]);
       setWhoPlaying(() => "Player 1");
       setUserPick(3);
