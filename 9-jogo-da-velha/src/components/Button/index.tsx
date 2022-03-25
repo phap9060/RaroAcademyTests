@@ -2,7 +2,7 @@
 import "./style.css"
 interface Iprops  {
     name:string
-    reset:any
+    reset:()=>void
 }
 
 const Button = ({name, reset}:Iprops) => {

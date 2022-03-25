@@ -1,21 +1,21 @@
-import { memo, FC, useState, useEffect } from "react";
+import React,{ memo,useState, useEffect } from "react";
 import "./style.css";
 
 interface Iprops {
   className: string;
-  whoPlaying?: string;
-  setWhoPlaying?: any;
-  localization?: any;
-  player1?: any;
-  setPlayer1?: any;
-  player2?: any;
-  setPlayer2?: any;
+  whoPlaying: string;
+  setWhoPlaying:React.Dispatch<React.SetStateAction<string>>;
+  localization: string;
+  player1: string[];
+  setPlayer1: React.Dispatch<React.SetStateAction<string[]>>;
+  player2:string[];
+  setPlayer2:React.Dispatch<React.SetStateAction<string[]>>;
   winner: boolean;
   restart: boolean;
-  setRestart: any
+  setRestart: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Square: FC<Iprops> = ({
+const Square = ({
   restart,
   setRestart,
   winner,
@@ -27,12 +27,12 @@ const Square: FC<Iprops> = ({
   setPlayer1,
   player2,
   setPlayer2,
-}) => {
+}:Iprops) => {
   const [userPick, setUserPick] = useState<number>(1);
 
   const player = () => {
     if (whoPlaying === "Player 1" && userPick === 1 && winner === false) {
-      setPlayer1(() => [...player1, localization]);
+      setPlayer1([...player1,localization]) ;
       setWhoPlaying(() => "Player 2");
       setUserPick(2);
     }
@@ -48,22 +48,22 @@ const Square: FC<Iprops> = ({
       setUserPick(() => 1) 
       setRestart(()=>false)
     }
-  }, [restart]);
+  }, [restart,setRestart]);
 
   return (
     <>
       {userPick === 1 && (
-        <div onClick={() => player()} className={className}></div>
+        <span onClick={() => player()} className={className}></span>
       )}
       {userPick === 2 && (
-        <div onClick={() => player()} className={className}>
+        <span onClick={() => player()} className={className} >
           O
-        </div>
+        </span>
       )}
       {userPick === 3 && (
-        <div onClick={() => player()} className={className}>
+        <span onClick={() => player()} className={className}>
           X
-        </div>
+        </span>
       )}
     </>
   );

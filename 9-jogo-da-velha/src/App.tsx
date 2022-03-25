@@ -5,9 +5,9 @@ import Square from "./components/Square";
 import "./App.css";
 
 function App() {
-  const [restart, setRestart] = useState<boolean>(false);
-  const [whoPlaying, setWhoPlaying] = useState<string>("Player 1");
-  const [winner, setWinner] = useState<boolean>(false);
+  const [restart, setRestart] = useState(false);
+  const [whoPlaying, setWhoPlaying] = useState("Player 1");
+  const [winner, setWinner] = useState(false);
   const [player1, setPlayer1] = useState<string[]>([]);
   const [player2, setPlayer2] = useState<string[]>([]);
 
@@ -132,8 +132,7 @@ function App() {
     ) {
       return setWinner(true), setWhoPlaying("Player 2");
     }
-    console.log(player1);
-    console.log(player2);
+   
   }, [player1, player2]);
 
   return (
