@@ -50,18 +50,22 @@ const Square = ({
     }
   }, [restart,setRestart]);
 
+  const style = {
+    color:'green'
+  }
+
   return (
     <>
       {userPick === 1 && (
         <span onClick={() => player()} className={className}></span>
       )}
       {userPick === 2 && (
-        <span onClick={() => player()} className={className} >
+        <span onClick={() => player()} className={className} style={{color:"#110e39"}} >
           O
         </span>
       )}
       {userPick === 3 && (
-        <span onClick={() => player()} className={className}>
+        <span onClick={() => player()} className={className} style={{color:'#ff4e34'}}>
           X
         </span>
       )}
